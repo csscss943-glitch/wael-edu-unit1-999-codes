@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الوحدة الأولى كاملة 1-1 حتى 1-4 - شامل</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Tajawal',sans-serif;background:#0A1931;color:#e6eefc;line-height:2.2;font-size:21px}
+.bg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:38px 38px;pointer-events:none}
+.container{max-width:1020px;margin:0 auto;padding:18px;position:relative;z-index:1}
+.header{border:2px solid rgba(255,201,71,0.4);border-radius:18px;background:linear-gradient(135deg,rgba(17,34,64,0.92),rgba(10,25,49,0.95));padding:20px;text-align:center;margin-bottom:14px;box-shadow:0 0 30px rgba(0,212,255,0.15)}
+.badge{display:inline-block;background:linear-gradient(90deg,#FFC947,#FFA500);color:#0A1931;padding:5px 16px;border-radius:20px;font-weight:900;font-size:14px}
+.title{font-size:32px;font-weight:900;background:linear-gradient(90deg,#FFC947,#FFE9A0,#FFC947);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:10px 0;line-height:1.3}
+.subtitle{color:#8fb4ff;font-size:18px}
+.name{margin-top:10px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);border-radius:10px;padding:8px 14px;display:inline-block;font-size:16px;color:#FFC947;font-weight:700}
+.nav{position:sticky;top:8px;z-index:20;display:flex;gap:6px;overflow-x:auto;padding:10px;background:rgba(10,25,49,0.96);border:1px solid rgba(0,212,255,0.25);border-radius:12px;margin-bottom:16px}
+.nav button{white-space:nowrap;padding:9px 14px;border-radius:9px;border:1px solid rgba(0,212,255,0.2);background:#112240;color:#a8c6ff;cursor:pointer;font-family:inherit;font-weight:700;font-size:14px}
+.nav button.active,.nav button:hover{background:#00D4FF;color:#001;box-shadow:0 0 12px rgba(0,212,255,0.5)}
+.card{background:rgba(17,34,64,0.78);backdrop-filter:blur(14px);border:1px solid rgba(0,212,255,0.22);border-radius:16px;padding:28px;margin-bottom:16px}
+.card-title{font-size:28px;font-weight:900;color:#FFC947;margin-bottom:14px}
+.gold{background:linear-gradient(135deg,rgba(255,201,71,0.15),rgba(255,201,71,0.05));border:1px solid #FFC947;border-radius:12px;padding:14px;margin:10px 0}
+.blue{background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.3);border-radius:12px;padding:14px;margin:10px 0}
+.green{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.3);border-radius:12px;padding:14px;margin:10px 0}
+.q{padding:11px 13px;border:1px solid rgba(0,212,255,0.2);border-radius:9px;margin:7px 0;cursor:pointer;background:#0f2342;transition:0.2s}
+.q:hover{border-color:#00D4FF}
+.q.correct{background:rgba(34,197,94,0.25);border-color:#22c55e}
+.q.wrong{background:rgba(239,68,68,0.25);border-color:#ef4444}
+.ans{display:none;margin-top:8px;padding:10px;background:rgba(255,201,71,0.1);border:1px solid #FFC947;border-radius:8px;font-size:17px}
+.footer-small{text-align:center;padding:10px;font-size:12px;color:#7aa0d0;border-top:1px solid rgba(0,212,255,0.2);margin-top:20px}
+details{margin:8px 0;background:rgba(0,212,255,0.05);border-radius:8px;padding:10px}
+summary{cursor:pointer;font-weight:800;color:#FFC947}
+.lesson-divider{height:3px;background:linear-gradient(90deg,transparent,#FFC947,transparent);margin:30px 0;border-radius:2px}
+.timeline{border-right:4px solid #FFC947;padding-right:14px;margin:10px 0}
+</style>
+</head>
+<body>
+<script>
+// حماية - لازم كود
+if(localStorage.getItem('access_granted')!=='true'){
+  window.location.href='../index.html';
+}
+</script>
+<div style="position:fixed;top:8px;left:8px;z-index:100;background:rgba(0,212,255,0.15);border:1px solid #00D4FF;border-radius:20px;padding:4px 10px;font-size:11px;color:#00D4FF">كود: <span id="c"></span> | <a href="#" onclick="localStorage.clear();location.href='../index.html'" style="color:#FFC947">خروج</a></div>
+<script>document.addEventListener('DOMContentLoaded',()=>{document.getElementById('c').textContent=localStorage.getItem('student_code')||''})</script>
+
+<div class="bg"></div>
+<div class="container">
+<div class="header">
+<div class="badge">الوحدة الأولى - التطور التكنولوجي والتحول الاجتماعي</div>
+<div class="title">البرمجة والذكاء الاصطناعي - الصف الثاني الثانوي</div>
+<div class="subtitle">الوحدة الأولى كاملة من الدرس 1-1 حتى 1-4 - ملتزم بنص الكتاب حرفياً</div>
+<div class="name">إعداد: وائل الجوجري - سينيور البرمجة والذكاء الاصطناعي - 01061641240</div>
+</div>
+
+<div class="nav">
+<button class="active" onclick="go('l1')">1-1 تطور تكنولوجيا المعلومات</button>
+<button onclick="go('l2')">1-2 كيف يعمل AI</button>
+<button onclick="go('l3')">1-3 AI في الحياة والصناعة</button>
+<button onclick="go('l4')">1-4 القضايا الأخلاقية</button>
+<button onclick="go('allq')">📝 شامل الأسئلة</button>
+</div>
+
+<div id="l1" class="card">
+<div class="card-title">📘 الدرس 1-1: تطور تكنولوجيا المعلومات والتحول الاجتماعي</div>
+<div class="gold"><b>الفكرة الأساسية:</b> تكنولوجيا المعلومات أضافت في كل مرحلة جهازاً أو طريقة جديدة، وغيّرت معها طريقة تواصل المجتمع وعمله وتجارته وتعلمه ودفع أمواله. مثال: طالب اليوم يقرأ رسائله عبر التواصل، يدفع ثمن إفطاره إلكترونياً، ينضم لدرس عبر الإنترنت، يشتري كتاباً من متجر إلكتروني - خدمات لم تكن منتشرة قبل 30 عاماً.</div>
+<div class="blue"><b>المفاهيم الأساسية:</b> قانون مور, شبكات التواصل الاجتماعي SNS, التجارة الإلكترونية, العمل عن بعد, التعلم عبر الإنترنت, الدفع غير النقدي, الحوسبة الطرفية, القيادة الذاتية, الواقع المعزز/الافتراضي, الحوسبة الكمومية</div>
+<div class="gold"><b>تاريخ IT - 5 مراحل:</b>
+<div class="timeline">
+<p>1. <b>الأربعينيات-الستينيات:</b> ENIAC والصمامات المفرغة - ضخمة تملأ غرفة - عسكرية وعلمية</p>
+<p>2. <b>السبعينيات-الثمانينيات:</b> الحواسب الشخصية PCs - بداية استخدام الأفراد</p>
+<p>3. <b>التسعينيات:</b> الإنترنت التجاري والويب - انتشار المعلومات والبريد</p>
+<p>4. <b>العقد الأول:</b> الهواتف الذكية آيفون - انتشار الإنترنت عبر المحمول</p>
+<p>5. <b>العقد الثاني فصاعداً:</b> الحوسبة السحابية والبيانات الضخمة والذكاء الاصطناعي - IT كخدمة</p>
+</div></div>
+<div class="blue"><b>قانون مور:</b> ملاحظة تجريبية وليست قانون فيزيائي ثابت - عدد الترانزستورات يتضاعف كل عامين. التحديات: تيارات التسرب + النفق الكمومي. البدائل: تعدد الأنوية والمعالجة المتوازية والتصميمات المتخصصة. الحوسبة الكمومية نهج مختلف لفئات محددة. Intel 4004 2300 → M1 Ultra 114B</div>
+<div class="green"><b>التحولات الخمسة:</b> SNS منصات تواصل ونشر بسرعة, E-commerce بيع وشراء عبر الإنترنت أمازون وإيباي, Remote Work من المنزل, Online Learning دروس عبر الإنترنت, Cashless بطاقات وتطبيقات و QR</div>
+<div class="blue"><b>تقنيات ناشئة:</b> القيادة الذاتية ذكاء اصطناعي + كاميرات ومستشعرات + حوسبة طرفية Edge معالجة محلياً فوراً &lt;10ms بدلاً من 100ms+ لضمان السلامة. AR تضيف عناصر رقمية فوق العالم الحقيقي. VR تضع المستخدم داخل بيئة افتراضية كاملة. الحوسبة الكمومية نهج بخصائص ميكانيكا الكم - البت 0 أو 1 فقط، الكيوبت تراكب مزيج 0 و1 - تفوق في فئات محددة فقط.<br><b>الخلاصة:</b> AR يضيف عناصر رقمية للعالم الحقيقي بينما VR يضع المستخدم داخل بيئة رقمية كاملة.</div>
+</div>
+
+<div id="l2" class="card">
+<div class="card-title">🤖 الدرس 1-2: كيف يعمل الذكاء الاصطناعي</div>
+<div class="gold"><b>أهداف التعلم:</b> تعريف AI والتمييز بين ML وDL وGenAI - شرح العلاقة بأمثلة - تقييم خطر الهلوسة<br><b>الفكرة الأساسية:</b> AI مجال واسع يضم ML وDL وGenAI مفاهيم مترابطة<br><b>المفاهيم:</b> AI, ML, DL, الشبكات العصبية, GenAI, الهلوسة<br><b>أمثلة يومية:</b> التعرف على الكلام, الصور, الترجمة<br><b>توقف وفكر:</b> مرشحات الرسائل المزعجة وتوصيات المنتجات تشترك في تعلم الأنماط من البيانات</div>
+<div class="blue"><b>السؤال الرئيسي:</b> ما هو AI وكيف يرتبط ML وDL وGenAI<br><b>ماهية AI:</b> مجال يضم أنظمة تستطيع التعلم من البيانات, التنبؤ, التعرف, توليد المحتوى, اتخاذ القرارات. أمثلة: التعرف على الكلام والصور والترجمة.<br><b>العلاقة AI و ML:</b> القواعد المبرمجة صراحة مقابل الأنماط التي يتعلمها النموذج - معظم أنظمة AI ضيقة النطاق<br><b>الشبكة العصبية:</b> نموذج حاسوبي مستوحى بصورة مبسطة من ترابط العصبونات<br><b>GenAI:</b> يستخدم DL لتوليد بيانات جديدة نصوص صور صوت<br><b>العلاقة:</b> AI ↓ ML ↓ DL ↓ GenAI - علاقة تعليمية مبسطة ليست احتواء صارم</div>
+<div class="green"><b>ML:</b> فرع من AI يتعلم أنماط من البيانات لتنبؤات وتصنيفات - أمثلة تصنيف رسائل مزعجة وتوصية منتجات<br><b>DL:</b> أسلوب من ML على شبكات عصبية متعددة الطبقات - أمثلة تحليل الصور والتعرف على الكلام<br><b>ANN:</b> وحدات مترابطة تتغير أوزانها أثناء التدريب<br><b>GenAI:</b> ينشئ محتوى جديد اعتماداً على الأنماط - على DL - أمثلة ChatGPT وأدوات توليد الصور<br><b>الهلوسة:</b> إنتاج نص يبدو معقولاً لكنه غير صحيح - خطر استخدامه كإجابة لتقرير مدرسي - ينبغي التحقق من المصادر</div>
+</div>
+
+<div id="l3" class="card">
+<div class="card-title">🌐 الدرس 1-3: AI في الحياة اليومية والصناعة</div>
+<div class="gold"><b>الفكرة الأساسية:</b> AI بارع في إيجاد الأنماط لكن الحكم البشري ضروري للأخلاق والخصوصية والمسؤولية<br><b>المفاهيم:</b> نظام التوصية, المساعد الصوتي, الترجمة الآلية, التعرف على الوجه, AI للتشخيص بالصور, الصيانة التنبؤية, الصندوق الأسود, الهلوسة<br><b>نظام التوصية:</b> يتنبأ بالتفضيلات من بيانات السلوك السابق ويعرض التوصيات</div>
+<div class="blue"><b>الخدمات اليومية:</b> أنظمة التوصية (يوتيوب أمازون سبوتيفاي) - المساعدات الصوتية (سيري جوجل) - الترجمة الآلية (Google Translate DeepL) - التعرف على الوجه (فتح الهاتف)<br><b>الصناعة:</b> رعاية صحية تشخيص بالصور, زراعة تنبؤ حصاد وكشف آفات, تصنيع فحص جودة وصيانة تنبؤية, لوجستية تحسين مسارات<br><b>ما يبرع فيه:</b> إيجاد وتصنيف الأنماط, التعرف على الصور والأصوات والنصوص وتوليد بعض المحتوى, الاستدلال الاحتمالي والتنبؤ<br><b>ما يتطلب الحذر:</b> القرارات الأخلاقية تمييز أو تحيز, المعلومات الشخصية الحساسة, القرارات عالية الأثر والمسؤولية<br><b>الصندوق الأسود:</b> عندما يكون من غير الواضح كيف توصل AI إلى حكمه<br><b>مشكلات:</b> دقة النتائج (بيانات غير كافية غير ممثلة متحيزة), الهلوسة, قضايا الحقوق, الصندوق الأسود</div>
+<div class="green"><b>مفتاح الدرس:</b> AI → اكتشاف الأنماط والتعرف والتنبؤ لكن عند وجود أخلاق + خصوصية + مسؤولية + قرار عالي الأثر → نحتاج الحذر والتحقق البشري</div>
+</div>
+
+<div id="l4" class="card">
+<div class="card-title">⚖️ الدرس 1-4: القضايا الأخلاقية</div>
+<div class="gold"><b>الفكرة الأساسية:</b> إذا بيانات التدريب متحيزة يمكن أن يكرر التحيز - استخدام مسؤول يعني التحقق من التحيز والقدرة على شرح القرارات ومعرفة المسؤول<br><b>التحيز الخوارزمي:</b> نمط في مخرجات AI قد يؤدي لنتائج غير عادلة وقد ينشأ من البيانات وتصميم النظام وطريقة استخدامه والسياق - مثال نظام توظيف يفضل فئة ونظام تعرف على الوجه تقل دقته<br><b>بيانات التدريب:</b> الأمثلة التي يتعلم منها AI أنماطه - كلما قل تمثيلها للواقع زاد احتمال التحيز</div>
+<div class="blue"><b>الأسباب:</b> بيانات متحيزة (غير كافية, انعكاس تمييز سابق) وطريقة بناء النظام (اختيار متغيرات, متغير بديل يمثل سمة محمية)<br><b>الخصوصية:</b> التحكم في البيانات الشخصية - قضايا: المراقبة عبر التعرف على الوجه وتتبع الأفراد, الجمع الجماعي للبيانات وتحليل كميات كبيرة<br><b>XAI:</b> أساليب تساعد البشر على فهم العوامل التي أسهمت في القرار - عندما آلية الوصول غير واضحة يصعب تقييمها<br><b>المسؤولية:</b> تحديد أدوار المطور والجهة المشغلة والمستخدم<br><b>المساءلة:</b> تحديد الجهات المسؤولة وإمكان محاسبتها - ليست القدرة على شرح القرار (تلك XAI) بل تحديد من يُحاسب<br><b>الشفافية:</b> إتاحة معلومات واضحة عن النظام واستخدامه وعملية اتخاذ القرار وحدوده<br><b>المبادئ الأربعة:</b> العدالة عدم التمييز ظلماً, الشفافية إتاحة معلومات واضحة, حماية الخصوصية التعامل مع المعلومات الشخصية بشكل مناسب, المساءلة تحديد الجهات المسؤولة</div>
+<div class="green"><b>الفكرة الرئيسة:</b> إذا بيانات متحيزة يمكن أن يكرر التحيز - استخدام مسؤول يعني التحقق من التحيز + شرح القرارات + معرفة المسؤول - العدالة + الشفافية + حماية الخصوصية + المساءلة</div>
+</div>
+
+<div class="lesson-divider"></div>
+
+<div id="allq" class="card">
+<div class="card-title">📝 تبويب شامل جميع الأسئلة - تفاعلي يكشف الإجابة فوراً</div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-1 اختيار من متعدد</h3>
+<div><b>1. فترة ظهور الهواتف الذكية؟</b>
+<div class="q" onclick="check(this,false)">أ) السبعينيات – الثمانينيات</div>
+<div class="q" onclick="check(this,false)">ب) التسعينيات</div>
+<div class="q" onclick="check(this,true)">جـ) العقد الأول من الألفية<div class="ans">✅ صحيح - آيفون 2007 العقد الأول</div></div>
+<div class="q" onclick="check(this,false)">د) العقد الثاني فصاعداً</div></div>
+<div><b>2. مبدأ الكيوبتات؟</b>
+<div class="q" onclick="check(this,false)">أ) ترانزستور متعدد الأنوية</div>
+<div class="q" onclick="check(this,true)">ب) التراكب الكمومي<div class="ans">✅ صحيح - التراكب يمثل مزيج 0 و1</div></div>
+<div class="q" onclick="check(this,false)">جـ) النفق الكمومي</div>
+<div class="q" onclick="check(this,false)">د) الحوسبة الطرفية</div></div>
+<div><b>3. إضافة معلومات رقمية فوق العالم الحقيقي؟</b>
+<div class="q" onclick="check(this,false)">أ) VR</div>
+<div class="q" onclick="check(this,true)">ب) AR<div class="ans">✅ صحيح - AR يضيف فوق العالم الحقيقي</div></div>
+<div class="q" onclick="check(this,false)">جـ) الحوسبة الطرفية</div>
+<div class="q" onclick="check(this,false)">د) الحوسبة الكمومية</div></div>
+<div><b>4. تحديات تصغير الدوائر؟</b>
+<div class="q" onclick="check(this,true)">أ) تيارات التسرب والتأثيرات الكمومية<div class="ans">✅ صحيح - من نص الكتاب</div></div>
+<div class="q" onclick="check(this,false)">ب) بطء الإنترنت</div>
+<div class="q" onclick="check(this,false)">جـ) حجم الحواسب</div>
+<div class="q" onclick="check(this,false)">د) عدم دقة QR</div></div>
+<div><b>5. معالجة بيانات سيارة ذاتية فوراً؟</b>
+<div class="q" onclick="check(this,false)">أ) الحوسبة الكمومية</div>
+<div class="q" onclick="check(this,true)">ب) الحوسبة الطرفية<div class="ans">✅ صحيح - &lt;10ms لضمان السلامة</div></div>
+<div class="q" onclick="check(this,false)">جـ) VR</div>
+<div class="q" onclick="check(this,false)">د) IT كخدمة</div></div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-1 صواب وخطأ</h3>
+<div class="blue">1. قانون مور قانون فيزيائي ثابت - <b style="color:#ef4444">× خطأ</b> - ملاحظة تجريبية<br>2. الحواسيب الأولى عسكرية وعلمية - <b style="color:#22c55e">○ صح</b><br>3. التجارة الإلكترونية شراء من متاجر فعلية - <b style="color:#ef4444">× خطأ</b> - عبر الإنترنت<br>4. VR يضع المستخدم داخل بيئة رقمية كاملة - <b style="color:#22c55e">○ صح</b><br>5. الحوسبة الكمومية بديل عام - <b style="color:#ef4444">× خطأ</b> - فئات محددة فقط</div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-1 حوسبة كمومية - إضافي</h3>
+<div><b>وحدة بناء الحوسبة الكمومية؟</b>
+<div class="q" onclick="check(this,false)">أ) البت</div>
+<div class="q" onclick="check(this,true)">ب) الكيوبت<div class="ans">✅ صحيح - Qubit بتراكب كمومي</div></div>
+<div class="q" onclick="check(this,false)">جـ) الحوسبة الطرفية</div>
+<div class="q" onclick="check(this,false)">د) البوابة المنطقية</div></div>
+<div><b>وصف دقيق للحوسبة الكمومية؟</b>
+<div class="q" onclick="check(this,false)">أ) بديل عام وسريع لجميع الحسابات</div>
+<div class="q" onclick="check(this,true)">ب) نهج يفيد في فئات محددة ولا يسرع كل الحسابات<div class="ans">✅ صحيح - من الكتاب: ليست بديلاً عاماً ولا تسرع جميع الحسابات</div></div>
+</div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-2 أسئلة</h3>
+<div class="blue"><b>صح وخطأ:</b> أ) ML يجعل AI يعمل - ○ صح, ب) DL مختلفة تماماً عن ML - × خطأ هو أسلوب من ML, جـ) GenAI يستخدم DL - ○ صح, د) AI و ML نفس المعنى - × خطأ<br><b>مطابقة:</b> 1 تتعلم الأنماط من البيانات → ML, 2 تستخدم الشبكات العصبية → DL, 3 تولد بيانات جديدة → GenAI<br><b>تدرب:</b> 1) أنظمة تتعلم وتتعرف وتتنبأ وتولد → AI, 2) فرع AI يتعلم أنماط → ML, 3) أسلوب ML على شبكات متعددة الطبقات → DL, 4) تنشئ محتوى جديد → GenAI</div>
+<div><b>أي خيار يصف العلاقة الصحيحة؟</b>
+<div class="q" onclick="check(this,false)">أ) AI &lt; DL &lt; ML &lt; GenAI</div>
+<div class="q" onclick="check(this,false)">ب) ML &lt; AI &lt; GenAI &lt; DL</div>
+<div class="q" onclick="check(this,false)">جـ) AI &lt; ML &lt; DL &lt; GenAI</div>
+<div class="q" onclick="check(this,true)">د) GenAI &lt; DL &lt; ML &lt; AI<div class="ans">✅ صحيح - GenAI الأصغر داخل DL داخل ML داخل AI الأكبر - علاقة تعليمية مبسطة</div></div></div>
+<div><b>لا يُعد مثالاً على GenAI:</b>
+<div class="q" onclick="check(this,false)">أ) ChatGPT</div>
+<div class="q" onclick="check(this,false)">ب) توليد الصور</div>
+<div class="q" onclick="check(this,true)">جـ) مرشح الرسائل المزعجة<div class="ans">✅ صحيح - مرشح الرسائل مثال على ML وليس GenAI</div></div>
+<div class="q" onclick="check(this,false)">د) توليد الصوت</div></div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-3 أسئلة</h3>
+<div class="blue"><b>مطابقة خدمات:</b> 1 يوتيوب يوصي → نظام التوصية, 2 التحدث لهاتف للطقس → مساعد صوتي, 3 ترجمة موقع → ترجمة آلية, 4 كاميرا تكتشف وجه → تعرف على الوجه<br><b>صح وخطأ:</b> أ) AI بارع في الاستدلال الاحتمالي - ○, ب) AI بارع في التعرف على الصور والصوت - ○, جـ) لا بأس بترك الأحكام الأخلاقية للـ AI - ×, د) أحكام AI غير دقيقة عندما بيانات متحيزة - ○</div>
+<div><b>لا ينتمي لما يتطلب الحذر:</b>
+<div class="q" onclick="check(this,false)">أ) الأحكام الأخلاقية</div>
+<div class="q" onclick="check(this,true)">ب) إيجاد الأنماط وتصنيفها<div class="ans">✅ صحيح - هذا مما يبرع فيه AI وليس مما يتطلب الحذر</div></div>
+<div class="q" onclick="check(this,false)">جـ) المعلومات الشخصية</div>
+<div class="q" onclick="check(this,false)">د) اتخاذ القرار النهائي</div></div>
+
+<h3 style="color:#FFC947;margin:16px 0">1-4 أسئلة</h3>
+<div class="blue"><b>صح وخطأ:</b> أ) التحيز الخوارزمي نمط قد ينشأ من البيانات - ○, ب) حتى لو القرار غير واضح لا مشكلة - ×, جـ) XAI تتيح فهم منطق AI - ○, د) المسؤول عن حكم خاطئ محدد بوضوح - ×<br><b>مطابقة مبادئ:</b> 1 عدم التمييز → عدالة, 2 إتاحة معلومات واضحة → شفافية, 3 التعامل مع المعلومات الشخصية → حماية الخصوصية, 4 تحديد الجهات المسؤولة → مساءلة</div>
+<div><b>ليس سبباً للتحيز؟</b>
+<div class="q" onclick="check(this,false)">أ) بيانات متحيزة</div>
+<div class="q" onclick="check(this,false)">ب) انعكاس تمييز سابق</div>
+<div class="q" onclick="check(this,true)">جـ) سرعة معالجة بطيئة<div class="ans">✅ صحيح - السرعة البطيئة ليست سبباً للتحيز</div></div>
+<div class="q" onclick="check(this,false)">د) بيانات غير كافية</div></div>
+<div><b>قضايا خصوصية:</b>
+<div class="q" onclick="check(this,true)">أ) التعرف على الأفراد وتتبعهم عبر التعرف على الوجه<div class="ans">✅ صحيح - قضية خصوصية</div></div>
+<div class="q" onclick="check(this,true)">ب) جمع بيانات السلوك بكميات كبيرة<div class="ans">✅ صحيح - قضية خصوصية</div></div>
+<div class="q" onclick="check(this,false)">جـ) AI ينشئ أعمال إبداعية</div>
+<div class="q" onclick="check(this,false)">د) تحسن سرعة حوسبة AI</div></div>
+
+<div style="margin-top:20px;padding:14px;background:rgba(255,201,71,0.12);border-radius:10px;border:1px solid #FFC947;text-align:center"><b>انتهت أسئلة الوحدة الأولى - 1-1 حتى 1-4 - كما وردت بالكتاب حرفياً مع كشف الإجابة الفوري</b></div>
+</div>
+
+<div class="footer-small">إعداد: وائل الجوجري - 01061641240 | البكالوريا المصرية - الوحدة الأولى كاملة - 2026</div>
+</div>
+
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function check(el,isCorrect){
+ const parent=el.parentElement;
+ parent.querySelectorAll('.q').forEach(o=>{o.classList.remove('correct','wrong'); let ans=o.querySelector('.ans'); if(ans) ans.style.display='none';});
+ if(isCorrect){el.classList.add('correct');} else {el.classList.add('wrong');}
+ let ans=el.querySelector('.ans');
+ if(ans) ans.style.display='block';
+ if(!isCorrect){
+   parent.querySelectorAll('.q').forEach(o=>{
+     if(o!==el && o.getAttribute('onclick') && o.getAttribute('onclick').includes('true')){
+       o.classList.add('correct');
+       let a=o.querySelector('.ans'); if(a) a.style.display='block';
+     }
+   });
+ }
+}
+document.querySelectorAll('.nav button').forEach(b=>{b.addEventListener('click',function(){document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active')); this.classList.add('active')})});
+</script>
+</body>
+</html>
